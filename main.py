@@ -1,26 +1,36 @@
-print("AI Email Automation System Prototype")
+# AI Email Automation System
 
-emails = [
-    {
-        "sender": "john@company.com",
-        "subject": "Updated report request",
-        "body": "Can you send the updated financial report by Thursday?"
-    },
-    {
-        "sender": "sarah@client.com",
-        "subject": "Meeting confirmation",
-        "body": "Please confirm tomorrow's meeting time."
-    }
-]
+Prototype system that analyzes emails, summarizes them, and extracts tasks automatically.
 
-for email in emails:
+## Overview
 
-    print("\n--------------")
-    print("Sender:", email["sender"])
-    print("Subject:", email["subject"])
+This project demonstrates a simplified AI workflow that:
 
-    print("Summary:")
-    print("Email requires review and possible response.")
+• reads email data  
+• generates summaries  
+• detects actionable tasks  
+• prepares structured outputs for workflow automation  
 
-    print("Task Extracted:")
-    print("Follow up on request.")
+The goal of the system is to reduce time spent triaging email and identifying work items.
+
+## Technologies Used
+
+- Python
+- OpenAI API
+- JSON data processing
+
+## Example Email
+
+Sender: john@company.com  
+Subject: Updated report request  
+
+Email Body:  
+"Can you send the updated financial report by Thursday?"
+
+## Example Output
+
+Summary:
+Request for updated financial report.
+
+Extracted Task:
+Send updated financial report.
