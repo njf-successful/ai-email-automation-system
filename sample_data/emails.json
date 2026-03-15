@@ -1,12 +1,17 @@
 [
-{
-"sender": "john@company.com",
-"subject": "Updated report request",
-"body": "Can you send the updated financial report by Thursday?"
-},
-{
-"sender": "sarah@client.com",
-"subject": "Meeting confirmation",
-"body": "Please confirm tomorrow's meeting time."
-}
+  {
+    "sender": "john@company.com",
+    "subject": "Updated report request",
+    "body": "Can you send the updated financial report by Thursday?"
+  },
+  {
+    "sender": "sarah@client.com",
+    "subject": "Meeting confirmation",
+    "body": "Please confirm tomorrow's meeting time."
+  },
+  {
+    "sender": "operations@vendor.com",
+    "subject": "Urgent document review",
+    "body": "Urgent: please review the attached document and send feedback ASAP."
+  }
 ]
