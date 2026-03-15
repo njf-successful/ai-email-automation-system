@@ -1,36 +1,41 @@
 # AI Email Automation System
 
-Prototype system that analyzes emails, summarizes them, and extracts tasks automatically.
+A working Python prototype that demonstrates how an email automation workflow can:
+
+- read email data
+- summarize messages
+- classify emails
+- extract tasks
+- generate draft replies
 
 ## Overview
 
-This project demonstrates a simplified AI workflow that:
+This project is a simplified proof-of-concept for an AI-powered email assistant.
 
-• reads email data  
-• generates summaries  
-• detects actionable tasks  
-• prepares structured outputs for workflow automation  
+The script reads sample email data from a JSON file, processes each email, and prints:
 
-The goal of the system is to reduce time spent triaging email and identifying work items.
+- sender
+- subject
+- summary
+- classification
+- extracted tasks
+- draft reply
 
-## Technologies Used
+This demonstrates the core logic behind a larger system that could later connect to:
 
-- Python
-- OpenAI API
-- JSON data processing
+- Microsoft Outlook via Microsoft Graph API
+- OpenAI for LLM-based classification and summarization
+- Google Sheets for task tracking
 
-## Example Email
+## Files
 
-Sender: john@company.com  
-Subject: Updated report request  
+- `main.py` → runs the email workflow
+- `sample_data/emails.json` → sample emails used as input
+- `requirements.txt` → project dependencies
 
-Email Body:  
-"Can you send the updated financial report by Thursday?"
+## How to Run
 
-## Example Output
+Clone the repository and run:
 
-Summary:
-Request for updated financial report.
-
-Extracted Task:
-Send updated financial report.
+```bash
+python main.py
